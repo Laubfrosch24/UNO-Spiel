@@ -18,7 +18,7 @@ namespace UNO
             new SimpleHTTPServer("Web", HttpPort);
             WebSocketServer wss = new WebSocketServer($"ws://0.0.0.0:{WebSocketPort}");
             wss.Start(socket => {
-                socket.OnOpen = () => socket.Send("Hallo");
+                socket.OnOpen = () => socket.Send("Halloasdasdasd");
             });
 
 #if DEBUG
